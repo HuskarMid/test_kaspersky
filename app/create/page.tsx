@@ -48,22 +48,6 @@ export default function Create() {
         setFormData(prev => ({ ...prev, AU: authors }))
     }
 
-    const handleKeywordsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const keywords = e.target.value.split(',').map(keyword => {
-            const [value, count] = keyword.trim().split(':')
-            return { value, count: parseInt(count) || 1 } as IData_TagItem
-        })
-        setFormData(prev => ({ ...prev, KW: keywords }))
-    }
-
-    const handleTrafficChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const traffic = e.target.value.split(',').map(item => {
-            const [value, count] = item.trim().split(':')
-            return { value, count: parseFloat(count) || 0 } as IData_TrafficItem
-        })
-        setFormData(prev => ({ ...prev, TRAFFIC: traffic }))
-    }
-
     return (
         <div className={styles.container}>
             <h1>Создать новую новость</h1>
