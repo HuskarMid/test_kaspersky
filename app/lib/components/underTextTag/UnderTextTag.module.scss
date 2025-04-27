@@ -1,0 +1,63 @@
+.UnderTextTag {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        color: var(--gray-color-light);
+        gap: 5px;
+        border: var(--gray-color-dark) 1px solid;
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 50px;
+
+        span {
+            font-weight: 200;
+            color: #fff;
+        }
+
+        transition: color 0.1s ease;
+        &:hover {
+
+            cursor: pointer;
+            color: white;
+        }
+    }
+
+    a {
+        font-weight: 200;
+        font-size: 13px;
+        color: #4d91ff;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 4px;
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border: solid currentColor;
+            border-width: 0px 1px 1px 0;
+            margin-top: 3px;
+        }
+    }
+
+    &__arrowUp::after {
+        transform: rotate(-135deg);
+        margin-top: 6px !important;
+    }
+
+    &__arrowDown::after {
+        transform: rotate(45deg);
+    }
+}
+
