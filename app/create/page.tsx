@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useAppDispatch } from "../lib/hooks"
 import { addSnippet } from "../lib/store/store"
-import { IData_SnippetNews, IData_TagItem, IData_TrafficItem } from "../lib/types/types"
+import { IData_SnippetNews } from "../lib/types/types"
 import { useState } from "react"
 import styles from "./page.module.scss"
 

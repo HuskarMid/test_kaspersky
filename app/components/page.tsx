@@ -1,6 +1,6 @@
 'use client'
 
-import { useAppSelector, useAppDispatch } from "../lib/hooks";
+import { useAppSelector } from "../lib/hooks";
 import Element from "../lib/elements/Element";
 import styles from "./page.module.scss";
 
