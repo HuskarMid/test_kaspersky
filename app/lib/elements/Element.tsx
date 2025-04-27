@@ -46,11 +46,11 @@ export default function Element({data}: {data: IData_SnippetNews}) {
               <p>{data.CNTR}</p>
             </div>
             <div className={styles.underTitleInfo__item}>
-              <Image className={styles.underTitleInfo__icon} src="/book-open.svg" alt="favicon" width={16} height={16} />
+              <Image className={styles.underTitleInfo__icon} src="/test_kaspersky/book-open.svg" alt="favicon" width={16} height={16} />
               <p>{data.LANG}</p>
             </div>
             <div className={styles.underTitleInfo__item}>
-              <Image className={styles.underTitleInfo__icon} src="/user.svg" alt="favicon" width={16} height={16} />
+              <Image className={styles.underTitleInfo__icon} src="/test_kaspersky/user.svg" alt="favicon" width={16} height={16} />
               <p>{data.AU.join(', ')}</p>
             </div>
         </div>
@@ -94,7 +94,7 @@ export default function Element({data}: {data: IData_SnippetNews}) {
                   <p>{data.CNTR}</p>
               </div>
               <div className={styles.blueElement__bottom__item}>
-                  <Image className={styles.blueElement__bottom__icon} src="/user.svg" alt="favicon" width={16} height={16} />
+                  <Image className={styles.blueElement__bottom__icon} src="/test_kaspersky/user.svg" alt="favicon" width={16} height={16} />
                   <p>{data.AU.join(', ')}</p>
               </div>
           </div>

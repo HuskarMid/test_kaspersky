@@ -21,7 +21,8 @@
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "redux-persist": "^6.0.0",
-    "sass": "^1.87.0"
+    "sass": "^1.87.0",
+    "svgr": "^1.10.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

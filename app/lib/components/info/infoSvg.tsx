@@ -3,7 +3,7 @@ import Image from 'next/image'
 export const InfoSvg = () => {
   return (
     <Image 
-      src="/info.svg"
+      src="/test_kaspersky/info.svg"
       alt="info"
       width={14}
       height={14}
