@@ -28,7 +28,7 @@ export default function Create() {
         SENT: '',
         TRAFFIC: [],
         FAV: '',
-        HIGHLIGHTS: mockData.HIGHLIGHTS,
+        HIGHLIGHTS: [],
         DUPLICATES: 0
     })
 
@@ -48,6 +48,11 @@ export default function Create() {
         setFormData(prev => ({ ...prev, AU: authors }))
     }
 
+    const handleHighlightsChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const highlights = e.target.value.split(',').map(highlight => highlight.trim())
+        setFormData(prev => ({ ...prev, HIGHLIGHTS: highlights }))
+    }
+
     return (
         <div className={styles.container}>
             <h1>Создать новую новость</h1>
@@ -64,11 +69,11 @@ export default function Create() {
                 </div>
 
                 <div className={styles.formGroup}>
-                    <label>Содержимое:</label>
+                    <label>Описание:</label>
                     <textarea
-                        name="AB"
-                        value={formData.AB}
-                        onChange={handleInputChange}
+                        name="HIGHLIGHTS"
+                        value={formData.HIGHLIGHTS.join(', ')}
+                        onChange={handleHighlightsChange}
                         required
                     />
                 </div>
